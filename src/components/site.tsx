@@ -32,7 +32,7 @@ export function Footer() {
     <div style={{ background: "var(--dark)", color: "#8D94A5", padding: "48px 0" }}>
       <div className="wrap" style={{ display: "flex", justifyContent: "space-between", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          <img src="/brand/toyscope-logo-white.svg" alt="ToyScope" width={128} height={32} style={{ height: 32, width: "auto", display: "block", marginBottom: 6 }} />
+          <img src="/brand/toyscope-logo-white.svg" alt="ToyScope" width={128} height={32} style={{ height: 32, width: "auto", display: "block", marginBottom: 6, alignSelf: "flex-start" }} />
           <div style={{ fontSize: 13 }}>ToyScope is not affiliated with any toy maker or brand. © {new Date().getFullYear()} ToyScope. Website by <a href="https://bluluma.com" style={{ color: "#C9CEDA" }}>Bluluma Design</a></div>
         </div>
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap", fontSize: 14 }}>
