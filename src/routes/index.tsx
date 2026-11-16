@@ -4,7 +4,7 @@ import { APP_URL, SITE_URL } from "@/lib/site";
 
 const TITLE = "ToyScope — Scan any toy. Know what it's worth.";
 const DESC = "Scan any toy to get its original Japanese name, value in every condition and history. Show off your collection and buy from collectors.";
-const OG = "https://app.toyscope.app/landing/t-result.jpg";
+const OG = "https://toyscope.app/brand/og-image.jpg";
 const L = "https://app.toyscope.app";
 
 export const Route = createFileRoute("/")({
@@ -16,6 +16,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: DESC },
       { property: "og:url", content: SITE_URL },
       { property: "og:image", content: OG },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:image", content: OG },
     ],
     links: [{ rel: "canonical", href: SITE_URL }],

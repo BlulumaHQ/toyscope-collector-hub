@@ -14,7 +14,7 @@ export function Nav() {
   return (
     <div style={{ background: "var(--dark)", color: "#fff" }}>
       <div className="wrap" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
-        <a href="/#top" aria-label="ToyScope home" className="logo" style={{ fontSize: 24 }}>Toy<span>Scope</span></a>
+        <a href="/#top" aria-label="ToyScope home" style={{ display: "flex", alignItems: "center" }}><img src="/brand/toyscope-logo-white.svg" alt="ToyScope" width={152} height={38} style={{ height: 38, width: "auto", display: "block" }} /></a>
         <div className="nav-links">
           <a href="/#how">How it works</a>
           <a href="/#showcase">Showcase</a>
@@ -32,7 +32,7 @@ export function Footer() {
     <div style={{ background: "var(--dark)", color: "#8D94A5", padding: "48px 0" }}>
       <div className="wrap" style={{ display: "flex", justifyContent: "space-between", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          <div className="logo" style={{ fontSize: 20 }}>Toy<span>Scope</span></div>
+          <img src="/brand/toyscope-logo-white.svg" alt="ToyScope" width={128} height={32} style={{ height: 32, width: "auto", display: "block", marginBottom: 6 }} />
           <div style={{ fontSize: 13 }}>ToyScope is not affiliated with any toy maker or brand. © {new Date().getFullYear()} ToyScope. Website by <a href="https://bluluma.com" style={{ color: "#C9CEDA" }}>Bluluma Design</a></div>
         </div>
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap", fontSize: 14 }}>
