@@ -6,7 +6,7 @@ export const Route = createFileRoute("/support")({
   head: () => ({
     meta: [
       { title: "Support — ToyScope" },
-      { name: "description", content: "ToyScope Support. Questions? hello@toyscope.app" },
+      { name: "description", content: "ToyScope Support. Questions? support@toyscope.app" },
       { property: "og:title", content: "Support — ToyScope" },
       { property: "og:description", content: "ToyScope Support." },
       { property: "og:url", content: `${SITE_URL}/support` },

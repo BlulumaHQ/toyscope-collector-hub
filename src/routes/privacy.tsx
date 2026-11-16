@@ -6,7 +6,7 @@ export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
       { title: "Privacy — ToyScope" },
-      { name: "description", content: "ToyScope Privacy. Questions? hello@toyscope.app" },
+      { name: "description", content: "ToyScope Privacy. Questions? support@toyscope.app" },
       { property: "og:title", content: "Privacy — ToyScope" },
       { property: "og:description", content: "ToyScope Privacy." },
       { property: "og:url", content: `${SITE_URL}/privacy` },

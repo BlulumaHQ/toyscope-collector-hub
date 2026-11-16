@@ -89,7 +89,7 @@ export function InstallSection() {
               <div className="eyebrow" style={{ color: "var(--gold)" }}>{x.testEyebrow}</div>
               <h2 className="h2" style={{ margin: 0 }}>{x.testH}</h2>
             </div>
-            <a href="mailto:hello@toyscope.app?subject=ToyScope%20beta%20bug" className="btn" style={{ background: "#fff", color: "var(--dark)", fontSize: 16, padding: "14px 22px", borderRadius: 12, minHeight: 48 }}>{x.testCta}</a>
+            <a href="mailto:support@toyscope.app?subject=ToyScope%20beta%20bug" className="btn" style={{ background: "#fff", color: "var(--dark)", fontSize: 16, padding: "14px 22px", borderRadius: 12, minHeight: 48 }}>{x.testCta}</a>
           </div>
           <div className="three">
             {x.testItems.map(([t, d], i) => (

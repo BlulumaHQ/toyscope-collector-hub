@@ -60,7 +60,7 @@ export function Footer() {
           <Link to="/privacy" className="flink">{t.footer.privacy}</Link>
           <Link to="/terms" className="flink">{t.footer.terms}</Link>
           <Link to="/support" className="flink">{t.footer.support}</Link>
-          <a href="mailto:hello@toyscope.app" className="flink">hello@toyscope.app</a>
+          <a href="mailto:support@toyscope.app" className="flink">support@toyscope.app</a>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ export function TextPage({ page }: { page: "privacy" | "terms" | "support" }) {
       <Nav />
       <div className="wrap" style={{ padding: "96px 32px", minHeight: "50vh" }}>
         <h1 className="h2">{title}</h1>
-        <p style={{ color: "var(--muted)", fontSize: 18, lineHeight: 1.55 }}>{t.footer.comingSoon} <a href="mailto:hello@toyscope.app">hello@toyscope.app</a></p>
+        <p style={{ color: "var(--muted)", fontSize: 18, lineHeight: 1.55 }}>{t.footer.comingSoon} <a href="mailto:support@toyscope.app">support@toyscope.app</a></p>
       </div>
       <Footer />
     </div>

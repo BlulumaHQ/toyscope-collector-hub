@@ -63,7 +63,7 @@ const en: InstallDict = {
   testH: "Help us test it",
   testItems: [
     ["Scan toys you own", "Try a few: robots, figures, boxed or loose. The more kinds you try, the better."],
-    ["Tell us what’s wrong", "Wrong name, odd price, a button that doesn’t work? Email hello@toyscope.app with a screenshot."],
+    ["Tell us what’s wrong", "Wrong name, odd price, a button that doesn’t work? Email support@toyscope.app with a screenshot."],
     ["Keep your Founder number", "Testers get the early Founder deals, and your number stays with your account."],
   ],
   testCta: "Report a bug",
@@ -71,7 +71,7 @@ const en: InstallDict = {
   faqQ: "Why isn’t it on the App Store yet?",
   faqA: "ToyScope is in public beta. We’re testing it with collectors before it goes into the App Store and Google Play. Until then, add it to your home screen from your phone’s browser; it works the same way.",
   bugQ: "I found a bug. Where do I send it?",
-  bugA: "Email hello@toyscope.app with what you tapped, what happened and a screenshot if you can. Every report helps.",
+  bugA: "Email support@toyscope.app with what you tapped, what happened and a screenshot if you can. Every report helps.",
 };
 
 const zhHant: InstallDict = {
@@ -107,7 +107,7 @@ const zhHant: InstallDict = {
   testH: "請幫我們測試",
   testItems: [
     ["掃描你自己的玩具", "多試幾種：機器人、人偶、有盒或裸裝。試得越多種越好。"],
-    ["告訴我們哪裡有問題", "名稱錯了、價格怪怪的、按鈕沒反應？請寄 email 和截圖到 hello@toyscope.app。"],
+    ["告訴我們哪裡有問題", "名稱錯了、價格怪怪的、按鈕沒反應？請寄 email 和截圖到 support@toyscope.app。"],
     ["保留你的創始編號", "測試者可以拿到早期創始會員優惠，編號跟著你的帳號走。"],
   ],
   testCta: "回報問題",
@@ -115,7 +115,7 @@ const zhHant: InstallDict = {
   faqQ: "為什麼還沒有上架 App Store？",
   faqA: "ToyScope 目前是公開測試版，我們先請收藏家幫忙測試，之後才會上架 App Store 和 Google Play。在那之前，用手機瀏覽器加到主畫面就能用，使用方式完全一樣。",
   bugQ: "我發現問題了，要回報給誰？",
-  bugA: "請寄到 hello@toyscope.app，告訴我們你點了什麼、發生了什麼事，可以的話附上截圖。每一則回報都很有幫助。",
+  bugA: "請寄到 support@toyscope.app，告訴我們你點了什麼、發生了什麼事，可以的話附上截圖。每一則回報都很有幫助。",
 };
 
 const zhHans: InstallDict = {
@@ -151,7 +151,7 @@ const zhHans: InstallDict = {
   testH: "请帮我们测试",
   testItems: [
     ["扫描你自己的玩具", "多试几种：机器人、人偶、带盒或裸装。试得越多越好。"],
-    ["告诉我们哪里有问题", "名称错了、价格奇怪、按钮没反应？请发邮件和截图到 hello@toyscope.app。"],
+    ["告诉我们哪里有问题", "名称错了、价格奇怪、按钮没反应？请发邮件和截图到 support@toyscope.app。"],
     ["保留你的创始编号", "测试者可以拿到早期创始会员优惠，编号跟着你的账号走。"],
   ],
   testCta: "反馈问题",
@@ -159,7 +159,7 @@ const zhHans: InstallDict = {
   faqQ: "为什么还没有上架 App Store？",
   faqA: "ToyScope 目前是公开测试版，我们先请收藏家帮忙测试，之后才会上架 App Store 和 Google Play。在那之前，用手机浏览器添加到主屏幕就能用，使用方式完全一样。",
   bugQ: "我发现问题了，要反馈给谁？",
-  bugA: "请发邮件到 hello@toyscope.app，告诉我们你点了什么、发生了什么，可以的话附上截图。每一条反馈都很有帮助。",
+  bugA: "请发邮件到 support@toyscope.app，告诉我们你点了什么、发生了什么，可以的话附上截图。每一条反馈都很有帮助。",
 };
 
 const es: InstallDict = {
@@ -195,7 +195,7 @@ const es: InstallDict = {
   testH: "Ayúdanos a probarla",
   testItems: [
     ["Escanea tus juguetes", "Prueba varios: robots, figuras, en caja o sueltos. Cuantos más tipos, mejor."],
-    ["Cuéntanos qué falla", "¿Nombre equivocado, precio raro o un botón que no funciona? Escribe a hello@toyscope.app con una captura."],
+    ["Cuéntanos qué falla", "¿Nombre equivocado, precio raro o un botón que no funciona? Escribe a support@toyscope.app con una captura."],
     ["Conserva tu número de Fundador", "Quienes prueban la beta obtienen las ofertas de Fundador, y tu número queda en tu cuenta."],
   ],
   testCta: "Reportar un error",
@@ -203,7 +203,7 @@ const es: InstallDict = {
   faqQ: "¿Por qué aún no está en la App Store?",
   faqA: "ToyScope está en beta pública. La estamos probando con coleccionistas antes de publicarla en la App Store y Google Play. Mientras tanto, añádela a tu pantalla de inicio desde el navegador del móvil; funciona igual.",
   bugQ: "Encontré un error. ¿Dónde lo envío?",
-  bugA: "Escribe a hello@toyscope.app contando qué tocaste, qué pasó y, si puedes, una captura de pantalla. Cada reporte ayuda.",
+  bugA: "Escribe a support@toyscope.app contando qué tocaste, qué pasó y, si puedes, una captura de pantalla. Cada reporte ayuda.",
 };
 
 const fr: InstallDict = {
@@ -239,7 +239,7 @@ const fr: InstallDict = {
   testH: "Aidez-nous à la tester",
   testItems: [
     ["Scannez vos jouets", "Essayez-en plusieurs : robots, figurines, en boîte ou loose. Plus c’est varié, mieux c’est."],
-    ["Dites-nous ce qui cloche", "Mauvais nom, prix bizarre, bouton qui ne marche pas ? Écrivez à hello@toyscope.app avec une capture d’écran."],
+    ["Dites-nous ce qui cloche", "Mauvais nom, prix bizarre, bouton qui ne marche pas ? Écrivez à support@toyscope.app avec une capture d’écran."],
     ["Gardez votre numéro de Fondateur", "Les testeurs profitent des offres Fondateur, et votre numéro reste lié à votre compte."],
   ],
   testCta: "Signaler un bug",
@@ -247,7 +247,7 @@ const fr: InstallDict = {
   faqQ: "Pourquoi n’est-elle pas encore sur l’App Store ?",
   faqA: "ToyScope est en bêta publique. Nous la testons avec des collectionneurs avant de la publier sur l’App Store et Google Play. En attendant, ajoutez-la à votre écran d’accueil depuis le navigateur de votre téléphone ; elle fonctionne de la même façon.",
   bugQ: "J’ai trouvé un bug. Où l’envoyer ?",
-  bugA: "Écrivez à hello@toyscope.app en expliquant ce que vous avez touché, ce qui s’est passé, avec une capture d’écran si possible. Chaque signalement nous aide.",
+  bugA: "Écrivez à support@toyscope.app en expliquant ce que vous avez touché, ce qui s’est passé, avec une capture d’écran si possible. Chaque signalement nous aide.",
 };
 
 const ko: InstallDict = {
@@ -283,7 +283,7 @@ const ko: InstallDict = {
   testH: "테스트에 참여해 주세요",
   testItems: [
     ["가진 장난감 스캔하기", "로봇, 피규어, 박스나 박스 없는 것까지 여러 종류를 시도해 보세요. 다양할수록 좋습니다."],
-    ["문제점 알려 주기", "이름이 틀렸거나, 가격이 이상하거나, 버튼이 안 되나요? 스크린샷과 함께 hello@toyscope.app으로 보내 주세요."],
+    ["문제점 알려 주기", "이름이 틀렸거나, 가격이 이상하거나, 버튼이 안 되나요? 스크린샷과 함께 support@toyscope.app으로 보내 주세요."],
     ["파운더 번호 유지", "테스터는 초기 파운더 혜택을 받고, 번호는 계정에 그대로 남습니다."],
   ],
   testCta: "버그 신고하기",
@@ -291,7 +291,7 @@ const ko: InstallDict = {
   faqQ: "왜 아직 App Store에 없나요?",
   faqA: "ToyScope는 공개 베타 중입니다. App Store와 Google Play에 출시하기 전에 컬렉터분들과 함께 테스트하고 있습니다. 그때까지는 휴대폰 브라우저에서 홈 화면에 추가해 사용하세요. 사용 방법은 똑같습니다.",
   bugQ: "버그를 발견했어요. 어디로 보내나요?",
-  bugA: "무엇을 눌렀고 어떤 일이 일어났는지, 가능하면 스크린샷과 함께 hello@toyscope.app으로 보내 주세요. 모든 신고가 큰 도움이 됩니다.",
+  bugA: "무엇을 눌렀고 어떤 일이 일어났는지, 가능하면 스크린샷과 함께 support@toyscope.app으로 보내 주세요. 모든 신고가 큰 도움이 됩니다.",
 };
 
 export const INSTALL: Record<Lang, InstallDict> = { en, "zh-Hant": zhHant, "zh-Hans": zhHans, es, fr, ko };
