@@ -150,3 +150,11 @@ html[lang="ja"] body{font-family:Inter,"Noto Sans JP","Hiragino Sans",system-ui,
 .legal h2{font-size:20px;margin:32px 0 8px}
 .legal p{color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 8px}
 .legal .legal-upd{font-size:14px;margin-bottom:8px}
+/* Mobile: app screenshots page one at a time, full card, snaps cleanly */
+@media (max-width:900px){
+  .screens{margin:0 -20px;padding:8px 0 28px;gap:0;scroll-snap-type:x mandatory;scroll-padding:0;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .screens::-webkit-scrollbar{display:none}
+  .shot{width:100vw;box-sizing:border-box;padding:0 20px;align-items:center;scroll-snap-align:center;scroll-snap-stop:always}
+  .shot>div:first-child{width:min(78vw,320px)}
+  .shot .phone{width:min(78vw,320px)!important}
+}
