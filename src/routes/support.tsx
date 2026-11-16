@@ -13,5 +13,5 @@ export const Route = createFileRoute("/support")({
     ],
     links: [{ rel: "canonical", href: `${SITE_URL}/support` }],
   }),
-  component: () => <TextPage title="Support" />,
+  component: () => <TextPage page="support" />,
 });

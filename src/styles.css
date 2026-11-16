@@ -70,3 +70,11 @@ a{color:var(--blue)}a:hover{color:#2C4185}
 .getapp{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
 @media (max-width:720px){.getapp{grid-template-columns:1fr;gap:24px;text-align:left}}
 @media (max-width:600px){.navlogo{height:36px!important}}
+
+.navright{display:flex;align-items:center;gap:12px}
+.langsel{position:relative;display:inline-flex;align-items:center;gap:6px;color:#C9CEDA;border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:0 10px;min-height:44px;cursor:pointer}
+.langsel select{appearance:none;-webkit-appearance:none;background:transparent;border:0;color:#fff;font:inherit;font-size:14px;font-weight:500;padding:0 2px;cursor:pointer;outline:none}
+.langsel select option{color:#12141A}
+.langsel:focus-within{border-color:var(--blue-l)}
+@media (max-width:600px){.navright{gap:8px}.langsel{padding:0 8px}.langsel select{font-size:13px;max-width:74px}.navopen{padding:10px 12px!important;font-size:13px!important}}
+html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}

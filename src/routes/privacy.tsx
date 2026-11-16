@@ -13,5 +13,5 @@ export const Route = createFileRoute("/privacy")({
     ],
     links: [{ rel: "canonical", href: `${SITE_URL}/privacy` }],
   }),
-  component: () => <TextPage title="Privacy" />,
+  component: () => <TextPage page="privacy" />,
 });
