@@ -247,6 +247,20 @@ function Index() {
               <p style={{ color: "#B7BDCB" }}>{t.founders.t3p}</p>
             </div>
           </div>
+          <div className="keep">
+            <div className="keep-head">
+              <h3>{t.founders.keepTitle}</h3>
+              <div className="keep-demo" aria-hidden="true">
+                <span>{t.founders.keepBar}</span>
+                <div className="keep-bar"><div style={{ width: "70%" }} /></div>
+              </div>
+            </div>
+            <ol>
+              {t.founders.keep.map((k, i) => (
+                <li key={i}><span className="n">{i + 1}</span><span>{k}</span></li>
+              ))}
+            </ol>
+          </div>
           <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
             <a href={appUrl} className="btn" style={{ background: "var(--gold)", color: "#1A1406", fontWeight: 700, fontSize: 17, padding: "16px 28px", borderRadius: 14, minHeight: 52 }}>{t.founders.cta}</a>
             <span style={{ color: "#8D94A5", fontSize: 14 }}>{t.founders.note}</span>
