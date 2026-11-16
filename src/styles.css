@@ -131,3 +131,6 @@ html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}
   .stores{flex-direction:column;align-items:flex-start;gap:16px}
   .stores .store{width:100%;max-width:320px;padding-right:16px}
 }
+/* Align all phone mockups on one baseline regardless of caption length */
+.screens{align-items:stretch}
+.shot{justify-content:space-between}
