@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/site";
 import { useI18n } from "@/lib/i18n";
 import { INSTALL } from "@/lib/i18n-install";
 import { InstallSection } from "@/components/install";
+import { useSpots, fill } from "@/lib/spots";
 
 const TITLE = "ToyScope — Scan any toy. Know what it's worth.";
 const DESC = "Scan any toy to get its original Japanese name, value in every condition and history. Show off your collection and buy from collectors.";
@@ -51,6 +52,7 @@ const cmpFree = [true, true, true, false, false, false];
 function Index() {
   const { t, appUrl, lang } = useI18n();
   const x = INSTALL[lang];
+  const spots = useSpots();
   const faqs: [string, string][] = t.faq.items.map((it, i) => (i === 3 ? [x.faqQ, x.faqA] : it));
   faqs.push([x.bugQ, x.bugA]);
   return (
@@ -63,7 +65,7 @@ function Index() {
             <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
               <a href="#install" className="betapill"><span className="dot" />{x.heroPill}</a>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(245,158,11,.14)", color: "var(--gold)", border: "1px solid rgba(245,158,11,.35)", padding: "8px 14px", borderRadius: 999, fontSize: 14, fontWeight: 600 }}>
-                <span style={{ width: 8, height: 8, borderRadius: "50%", background: "var(--gold)" }} />{t.hero.spots}
+                <span style={{ width: 8, height: 8, borderRadius: "50%", background: "var(--gold)" }} />{fill(t.hero.spots, spots.lifetime)}
             </div>
             </div>
             <h1 className="h1">{t.hero.h1a}<br />{t.hero.h1b}</h1>
@@ -228,16 +230,16 @@ function Index() {
           </div>
           <div className="three">
             <div className="tier" style={{ background: "linear-gradient(180deg, #2A2210, #17140C)", border: "1px solid rgba(251,191,36,.45)" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><span className="badge" style={{ background: "#FEF3C7", color: "#92400E" }}>{t.founders.t1badge}</span><span style={{ color: "var(--gold)", fontWeight: 700, fontSize: 14 }}>{t.founders.t1left}</span></div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><span className="badge" style={{ background: "#FEF3C7", color: "#92400E" }}>{t.founders.t1badge}</span><span style={{ color: "var(--gold)", fontWeight: 700, fontSize: 14 }}>{fill(t.founders.t1left, spots.lifetime)}</span></div>
               <div className="big">{t.founders.t1big}</div>
               <p style={{ color: "#D6CDB4" }}>{t.founders.t1p}</p>
-              <div className="bar"><div style={{ width: "10%", background: "var(--gold)" }} /></div>
+              <div className="bar"><div style={{ width: `${Math.round(((20 - spots.lifetime) / 20) * 100)}%`, background: "var(--gold)" }} /></div>
             </div>
             <div className="tier" style={{ background: "#161A24", border: "1px solid rgba(142,162,221,.45)" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><span className="badge" style={{ background: "#E0E7FF", color: "#3730A3" }}>{t.founders.t2badge}</span><span style={{ color: "#9DB0FF", fontWeight: 700, fontSize: 14 }}>{t.founders.t2left}</span></div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><span className="badge" style={{ background: "#E0E7FF", color: "#3730A3" }}>{t.founders.t2badge}</span><span style={{ color: "#9DB0FF", fontWeight: 700, fontSize: 14 }}>{fill(t.founders.t2left, spots.founding)}</span></div>
               <div className="big">{t.founders.t2big}</div>
               <p style={{ color: "#B7BDCB" }}>{t.founders.t2p}</p>
-              <div className="bar"><div style={{ width: "0%", background: "var(--blue-l)" }} /></div>
+              <div className="bar"><div style={{ width: `${Math.round(((180 - spots.founding) / 180) * 100)}%`, background: "var(--blue-l)" }} /></div>
             </div>
             <div className="tier" style={{ background: "#12151D", border: "1px solid rgba(255,255,255,.12)" }}>
               <div style={{ display: "flex" }}><span className="badge" style={{ background: "rgba(255,255,255,.1)", color: "#C9CEDA" }}>{t.founders.t3badge}</span></div>
