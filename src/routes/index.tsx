@@ -4,6 +4,7 @@ import { SITE_URL } from "@/lib/site";
 import { useI18n } from "@/lib/i18n";
 import { INSTALL } from "@/lib/i18n-install";
 import { InstallSection } from "@/components/install";
+import { ShotCarousel } from "@/components/shots";
 import { useSpots, fill } from "@/lib/spots";
 
 const TITLE = "ToyScope — Scan any toy. Know what it's worth.";
@@ -139,16 +140,9 @@ function Index() {
               <div className="eyebrow">{t.inside.eyebrow}</div>
               <h2 className="h2">{t.inside.h2}</h2>
             </div>
-            <div style={{ color: "var(--muted)", fontSize: 14 }}>{t.inside.swipe}</div>
+            <div className="swipe-desk" style={{ color: "var(--muted)", fontSize: 14 }}>{t.inside.swipe}</div>
           </div>
-          <div className="screens">
-            {shotImgs.map(([img, alt], i) => (
-              <div className="shot" key={img}>
-                <div style={{ ...col, gap: 6 }}><h3>{t.inside.shots[i]?.[0]}</h3><p>{t.inside.shots[i]?.[1]}</p></div>
-                <PhoneMockup small width={250} src={`/images/app/${img}.jpg`} alt={alt} />
-              </div>
-            ))}
-          </div>
+          <ShotCarousel swipeLabel={t.inside.swipe} shots={shotImgs.map(([img, alt], i) => ({ img, alt, title: t.inside.shots[i]?.[0] ?? "", text: t.inside.shots[i]?.[1] ?? "" }))} />
         </div>
       </div>
 

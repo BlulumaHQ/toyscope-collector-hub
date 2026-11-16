@@ -150,11 +150,23 @@ html[lang="ja"] body{font-family:Inter,"Noto Sans JP","Hiragino Sans",system-ui,
 .legal h2{font-size:20px;margin:32px 0 8px}
 .legal p{color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 8px}
 .legal .legal-upd{font-size:14px;margin-bottom:8px}
-/* Mobile: app screenshots page one at a time, full card, snaps cleanly */
+/* Mobile: looping screenshot carousel with peeking neighbours, dots and swipe hint */
 @media (max-width:900px){
-  .screens{margin:0 -20px;padding:8px 0 28px;gap:0;scroll-snap-type:x mandatory;scroll-padding:0;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .screens::-webkit-scrollbar{display:none}
-  .shot{width:100vw;box-sizing:border-box;padding:0 20px;align-items:center;scroll-snap-align:center;scroll-snap-stop:always}
-  .shot>div:first-child{width:min(78vw,320px)}
-  .shot .phone{width:min(78vw,320px)!important}
+  .swipe-desk{display:none}
+  .screens.loop{margin:0 -20px;padding:8px 11vw 20px;gap:4vw;scroll-snap-type:x mandatory;scroll-padding:0 11vw;overscroll-behavior-x:contain;scrollbar-width:none}
+  .screens.loop::-webkit-scrollbar{display:none}
+  .screens.loop .shot{width:78vw;max-width:340px;box-sizing:border-box;align-items:center;scroll-snap-align:center;scroll-snap-stop:always}
+  .screens.loop .shot>div:first-child{width:100%}
+  .screens.loop .shot .phone{width:100%!important}
 }
+.shotnav{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px}
+.dots{display:flex;gap:8px}
+.dots button{width:8px;height:8px;border-radius:99px;border:0;padding:0;background:#B8BFCE;cursor:pointer;transition:width .2s,background .2s;position:relative}
+.dots button::after{content:"";position:absolute;inset:-10px}
+.dots button.on{width:22px;background:var(--blue)}
+.swipehint{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px;font-weight:600}
+.swipehint .ar{font-size:22px;line-height:1;color:var(--blue);animation:nudgeL 1.4s ease-in-out infinite}
+.swipehint .ar.r{animation-name:nudgeR}
+@keyframes nudgeL{0%,100%{transform:translateX(0)}50%{transform:translateX(-5px)}}
+@keyframes nudgeR{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@media (prefers-reduced-motion:reduce){.swipehint .ar{animation:none}}
