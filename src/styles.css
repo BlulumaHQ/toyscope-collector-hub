@@ -146,3 +146,7 @@ html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}
 .keep .n{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(245,158,11,.16);color:var(--gold);font-weight:700;font-size:14px}
 @media (max-width:900px){.keep ol{grid-template-columns:minmax(0,1fr)}}
 html[lang="ja"] body{font-family:Inter,"Noto Sans JP","Hiragino Sans",system-ui,sans-serif;line-break:strict}
+/* Legal pages */
+.legal h2{font-size:20px;margin:32px 0 8px}
+.legal p{color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 8px}
+.legal .legal-upd{font-size:14px;margin-bottom:8px}

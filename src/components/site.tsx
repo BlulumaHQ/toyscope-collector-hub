@@ -1,3 +1,4 @@
+import { LEGAL } from "@/lib/legal";
 import { Link } from "@tanstack/react-router";
 import { useI18n, LANGS, type Lang } from "@/lib/i18n";
 import { INSTALL } from "@/lib/i18n-install";
@@ -59,6 +60,7 @@ export function Footer() {
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap", fontSize: 14 }}>
           <Link to="/privacy" className="flink">{t.footer.privacy}</Link>
           <Link to="/terms" className="flink">{t.footer.terms}</Link>
+          <Link to="/refunds" className="flink">{t.footer.refunds}</Link>
           <Link to="/support" className="flink">{t.footer.support}</Link>
           <a href="mailto:support@toyscope.app" className="flink">support@toyscope.app</a>
         </div>
@@ -67,15 +69,38 @@ export function Footer() {
   );
 }
 
-export function TextPage({ page }: { page: "privacy" | "terms" | "support" }) {
-  const { t } = useI18n();
-  const title = t.footer[page];
+export function TextPage({ page }: { page: "privacy" | "terms" | "support" | "refunds" }) {
+  const { t, lang } = useI18n();
+  if (page === "support") {
+    return (
+      <div>
+        <Nav />
+        <div className="wrap" style={{ padding: "96px 32px", minHeight: "50vh" }}>
+          <h1 className="h2">{t.footer.support}</h1>
+          <p style={{ color: "var(--muted)", fontSize: 18, lineHeight: 1.55 }}>
+            Questions, bug reports or billing help: <a href="mailto:support@toyscope.app">support@toyscope.app</a>. We usually reply within one business day.
+          </p>
+          <p style={{ color: "var(--muted)", fontSize: 18, lineHeight: 1.55 }}>
+            Web purchases are processed by Paddle.com, our merchant of record. You can also manage or get help with a payment at <a href="https://paddle.net" target="_blank" rel="noopener noreferrer">paddle.net</a>.
+          </p>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+  const doc = LEGAL[page];
   return (
     <div>
       <Nav />
-      <div className="wrap" style={{ padding: "96px 32px", minHeight: "50vh" }}>
-        <h1 className="h2">{title}</h1>
-        <p style={{ color: "var(--muted)", fontSize: 18, lineHeight: 1.55 }}>{t.footer.comingSoon} <a href="mailto:support@toyscope.app">support@toyscope.app</a></p>
+      <div className="wrap legal" style={{ padding: "96px 32px", maxWidth: 820 }}>
+        <h1 className="h2">{doc.t}</h1>
+        <p className="legal-upd">Last updated {LEGAL.updated}{lang !== "en" ? " · English version" : ""}</p>
+        {doc.s.map(([h, body]) => (
+          <section key={h}>
+            <h2>{h}</h2>
+            {body.split("\n").map((line, i) => <p key={i}>{line}</p>)}
+          </section>
+        ))}
       </div>
       <Footer />
     </div>

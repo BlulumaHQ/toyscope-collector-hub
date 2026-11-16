@@ -145,7 +145,7 @@ const en = {
     websiteBy: "Website by",
     privacy: "Privacy",
     terms: "Terms",
-    support: "Support",
+    refunds: "Refunds", support: "Support",
     comingSoon: "Coming soon. Questions?",
   },
 };
@@ -267,7 +267,7 @@ const zhHant: Dict = {
   },
   cta: { h2: "你的收藏櫃值多少？", p: "幾秒就知道答案，趁還有名額，領取你的創始編號。", btn: "免費開始掃描" },
   badges: { appleT1: "即將登上", playT1: "即將登上", soon: "即將推出", iconAlt: "ToyScope App icon" },
-  footer: { disclaimer: "ToyScope 與任何玩具廠商或品牌無關。", websiteBy: "網站設計：", privacy: "隱私權", terms: "使用條款", support: "支援", comingSoon: "即將推出。有問題嗎？" },
+  footer: { disclaimer: "ToyScope 與任何玩具廠商或品牌無關。", websiteBy: "網站設計：", privacy: "隱私權", terms: "使用條款", refunds: "退款政策", support: "支援", comingSoon: "即將推出。有問題嗎？" },
 };
 
 const zhHans: Dict = {
@@ -386,7 +386,7 @@ const zhHans: Dict = {
   },
   cta: { h2: "你的收藏柜值多少？", p: "几秒就知道答案，趁还有名额，领取你的创始编号。", btn: "免费开始扫描" },
   badges: { appleT1: "即将登陆", playT1: "即将登陆", soon: "即将推出", iconAlt: "ToyScope App 图标" },
-  footer: { disclaimer: "ToyScope 与任何玩具厂商或品牌无关。", websiteBy: "网站设计：", privacy: "隐私政策", terms: "使用条款", support: "帮助", comingSoon: "即将推出。有问题吗？" },
+  footer: { disclaimer: "ToyScope 与任何玩具厂商或品牌无关。", websiteBy: "网站设计：", privacy: "隐私政策", terms: "使用条款", refunds: "退款政策", support: "帮助", comingSoon: "即将推出。有问题吗？" },
 };
 
 const es: Dict = {
@@ -505,7 +505,7 @@ const es: Dict = {
   },
   cta: { h2: "¿Cuánto vale tu colección?", p: "Descúbrelo en segundos y reclama tu número de Fundador mientras queden plazas.", btn: "Empieza a escanear gratis" },
   badges: { appleT1: "Próximamente en la", playT1: "Próximamente en", soon: "PRONTO", iconAlt: "Icono de la app ToyScope" },
-  footer: { disclaimer: "ToyScope no está afiliado a ningún fabricante ni marca de juguetes.", websiteBy: "Web por", privacy: "Privacidad", terms: "Términos", support: "Ayuda", comingSoon: "Próximamente. ¿Preguntas?" },
+  footer: { disclaimer: "ToyScope no está afiliado a ningún fabricante ni marca de juguetes.", websiteBy: "Web por", privacy: "Privacidad", terms: "Términos", refunds: "Reembolsos", support: "Ayuda", comingSoon: "Próximamente. ¿Preguntas?" },
 };
 
 const fr: Dict = {
@@ -624,7 +624,7 @@ const fr: Dict = {
   },
   cta: { h2: "Que vaut votre vitrine ?", p: "Découvrez-le en quelques secondes, et obtenez votre numéro de Fondateur tant qu’il reste des places.", btn: "Scanner gratuitement" },
   badges: { appleT1: "Bientôt disponible sur", playT1: "Bientôt disponible sur", soon: "BIENTÔT", iconAlt: "Icône de l’app ToyScope" },
-  footer: { disclaimer: "ToyScope n’est affilié à aucun fabricant ni aucune marque de jouets.", websiteBy: "Site par", privacy: "Confidentialité", terms: "Conditions", support: "Aide", comingSoon: "Bientôt disponible. Des questions ?" },
+  footer: { disclaimer: "ToyScope n’est affilié à aucun fabricant ni aucune marque de jouets.", websiteBy: "Site par", privacy: "Confidentialité", terms: "Conditions", refunds: "Remboursements", support: "Aide", comingSoon: "Bientôt disponible. Des questions ?" },
 };
 
 const ko: Dict = {
@@ -743,7 +743,7 @@ const ko: Dict = {
   },
   cta: { h2: "내 진열장은 얼마일까요?", p: "몇 초 만에 확인하고, 자리가 남아 있을 때 파운더 번호를 받으세요.", btn: "무료로 스캔 시작" },
   badges: { appleT1: "곧 출시", playT1: "곧 출시", soon: "출시 예정", iconAlt: "ToyScope 앱 아이콘" },
-  footer: { disclaimer: "ToyScope는 어떤 장난감 제조사나 브랜드와도 관련이 없습니다.", websiteBy: "웹사이트 제작", privacy: "개인정보처리방침", terms: "이용약관", support: "고객지원", comingSoon: "곧 공개됩니다. 문의사항이 있으신가요?" },
+  footer: { disclaimer: "ToyScope는 어떤 장난감 제조사나 브랜드와도 관련이 없습니다.", websiteBy: "웹사이트 제작", privacy: "개인정보처리방침", terms: "이용약관", refunds: "환불 정책", support: "고객지원", comingSoon: "곧 공개됩니다. 문의사항이 있으신가요?" },
 };
 
 const ja: Dict = {
@@ -878,7 +878,7 @@ const ja: Dict = {
     websiteBy: "Website by",
     privacy: "プライバシー",
     terms: "利用規約",
-    support: "サポート",
+    refunds: "返金ポリシー", support: "サポート",
     comingSoon: "近日公開。ご質問は",
   },
 };
