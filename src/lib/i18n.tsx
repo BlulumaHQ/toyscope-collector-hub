@@ -1,3 +1,4 @@
+import { APP_URL } from "@/lib/site";
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
 export type Lang = "en" | "zh-Hant" | "zh-Hans" | "es" | "fr" | "ko";
@@ -743,8 +744,8 @@ function detect(): Lang {
   return "en";
 }
 
-type Ctx = { lang: Lang; t: Dict; setLang: (l: Lang) => void };
-const LangCtx = createContext<Ctx>({ lang: "en", t: en, setLang: () => {} });
+type Ctx = { lang: Lang; t: Dict; setLang: (l: Lang) => void; appUrl: string };
+const LangCtx = createContext<Ctx>({ lang: "en", t: en, setLang: () => {}, appUrl: APP_URL });
 
 export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("en");
@@ -762,7 +763,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
       /* storage unavailable */
     }
   };
-  return <LangCtx.Provider value={{ lang, t: DICTS[lang], setLang }}>{children}</LangCtx.Provider>;
+  return <LangCtx.Provider value={{ lang, t: DICTS[lang], setLang, appUrl: `${APP_URL}/?lang=${lang}` }}>{children}</LangCtx.Provider>;
 }
 
 export const useI18n = () => useContext(LangCtx);

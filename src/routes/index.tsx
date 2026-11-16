@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav, Footer, PhoneMockup, StoreBadges, AppIcon } from "@/components/site";
-import { APP_URL, SITE_URL } from "@/lib/site";
+import { SITE_URL } from "@/lib/site";
 import { useI18n } from "@/lib/i18n";
 
 const TITLE = "ToyScope — Scan any toy. Know what it's worth.";
@@ -47,7 +47,7 @@ const listings: [string, string, string, string, string][] = [
 const cmpFree = [true, true, true, false, false, false];
 
 function Index() {
-  const { t } = useI18n();
+  const { t, appUrl } = useI18n();
   return (
     <div style={{ width: "100%" }}>
       <Nav />
@@ -61,7 +61,7 @@ function Index() {
             <h1 className="h1">{t.hero.h1a}<br />{t.hero.h1b}</h1>
             <p style={{ margin: 0, fontSize: 19, lineHeight: 1.55, color: "#B7BDCB", maxWidth: 540 }}>{t.hero.lead}</p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href={APP_URL} className="btn" style={{ background: "var(--blue)", color: "#fff", fontSize: 17, padding: "16px 26px", borderRadius: 14, minHeight: 52 }}>{t.hero.cta}</a>
+              <a href={appUrl} className="btn" style={{ background: "var(--blue)", color: "#fff", fontSize: 17, padding: "16px 26px", borderRadius: 14, minHeight: 52 }}>{t.hero.cta}</a>
               <a href="#how" className="btn" style={{ background: "rgba(255,255,255,.08)", color: "#fff", fontSize: 17, padding: "16px 24px", borderRadius: 14, border: "1px solid rgba(255,255,255,.18)", minHeight: 52 }}>{t.hero.see}</a>
             </div>
             <div style={{ ...col, gap: 12, marginTop: 4 }}>
@@ -170,7 +170,7 @@ function Index() {
               <h2 className="h2">{t.showcase.h2}</h2>
               <p style={lead}>{t.showcase.p}</p>
             </div>
-            <a href={APP_URL} style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "none", fontSize: 16, minHeight: 44, display: "inline-flex", alignItems: "center" }}>{t.showcase.browse}</a>
+            <a href={appUrl} style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "none", fontSize: 16, minHeight: 44, display: "inline-flex", alignItems: "center" }}>{t.showcase.browse}</a>
           </div>
           <div className="gallery">
             <div className="g-tall"><img loading="lazy" src={"/images/shelves/c19.jpg"} alt="A shelf of Gatchaman toys" /><span className="pill" style={{ left: 12, bottom: 12, background: "rgba(0,0,0,.6)", fontWeight: 600, padding: "5px 10px" }}>@sonykun · {t.showcase.notForSale}</span></div>
@@ -236,7 +236,7 @@ function Index() {
             </div>
           </div>
           <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
-            <a href={APP_URL} className="btn" style={{ background: "var(--gold)", color: "#1A1406", fontWeight: 700, fontSize: 17, padding: "16px 28px", borderRadius: 14, minHeight: 52 }}>{t.founders.cta}</a>
+            <a href={appUrl} className="btn" style={{ background: "var(--gold)", color: "#1A1406", fontWeight: 700, fontSize: 17, padding: "16px 28px", borderRadius: 14, minHeight: 52 }}>{t.founders.cta}</a>
             <span style={{ color: "#8D94A5", fontSize: 14 }}>{t.founders.note}</span>
           </div>
         </div>
@@ -272,7 +272,7 @@ function Index() {
           <div style={{ ...col, gap: 16 }}>
             <div className="eyebrow" style={{ color: "var(--blue-l)" }}>{t.app.eyebrow}</div>
             <h2 className="h2" style={{ margin: 0 }}>{t.app.h2}</h2>
-            <p style={{ margin: 0, fontSize: 18, lineHeight: 1.55, color: "#B7BDCB", maxWidth: 620 }}>{t.app.p1}<a href={APP_URL} style={{ color: "#fff", fontWeight: 600 }}>app.toyscope.app</a>{t.app.p2}</p>
+            <p style={{ margin: 0, fontSize: 18, lineHeight: 1.55, color: "#B7BDCB", maxWidth: 620 }}>{t.app.p1}<a href={appUrl} style={{ color: "#fff", fontWeight: 600 }}>app.toyscope.app</a>{t.app.p2}</p>
             <StoreBadges />
           </div>
         </div>
@@ -285,7 +285,7 @@ function Index() {
             <h2 className="h2" style={{ lineHeight: 1.05 }}>{t.cta.h2}</h2>
             <p style={{ margin: 0, fontSize: 18, color: "#DCE2F4" }}>{t.cta.p}</p>
           </div>
-          <a href={APP_URL} className="btn" style={{ background: "#fff", color: "var(--blue)", fontWeight: 700, fontSize: 17, padding: "16px 28px", borderRadius: 14, minHeight: 52 }}>{t.cta.btn}</a>
+          <a href={appUrl} className="btn" style={{ background: "#fff", color: "var(--blue)", fontWeight: 700, fontSize: 17, padding: "16px 28px", borderRadius: 14, minHeight: 52 }}>{t.cta.btn}</a>
         </div>
       </div>
 

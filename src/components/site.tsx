@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { APP_URL } from "@/lib/site";
 import { useI18n, LANGS, type Lang } from "@/lib/i18n";
 
 export function PhoneMockup({ src, alt, width, small, eager }: { src: string; alt: string; width: number; small?: boolean; eager?: boolean }) {
@@ -24,7 +23,7 @@ function LangSelect() {
 }
 
 export function Nav() {
-  const { t } = useI18n();
+  const { t, appUrl } = useI18n();
   return (
     <div style={{ background: "var(--dark)", color: "#fff" }}>
       <div className="wrap" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 84 }}>
@@ -37,7 +36,7 @@ export function Nav() {
         </div>
         <div className="navright">
           <LangSelect />
-          <a href={APP_URL} className="btn navopen" style={{ background: "#fff", color: "var(--dark)", fontSize: 15, padding: "12px 20px", borderRadius: 12, minHeight: 44 }}>{t.nav.open}</a>
+          <a href={appUrl} className="btn navopen" style={{ background: "#fff", color: "var(--dark)", fontSize: 15, padding: "12px 20px", borderRadius: 12, minHeight: 44 }}>{t.nav.open}</a>
         </div>
       </div>
     </div>
