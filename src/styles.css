@@ -145,3 +145,4 @@ html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}
 .keep li{display:flex;gap:12px;align-items:flex-start;color:#C9CEDA;font-size:15px;line-height:1.5}
 .keep .n{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(245,158,11,.16);color:var(--gold);font-weight:700;font-size:14px}
 @media (max-width:900px){.keep ol{grid-template-columns:minmax(0,1fr)}}
+html[lang="ja"] body{font-family:Inter,"Noto Sans JP","Hiragino Sans",system-ui,sans-serif;line-break:strict}

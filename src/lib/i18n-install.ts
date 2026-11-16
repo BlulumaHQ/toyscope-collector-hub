@@ -294,4 +294,48 @@ const ko: InstallDict = {
   bugA: "무엇을 눌렀고 어떤 일이 일어났는지, 가능하면 스크린샷과 함께 support@toyscope.app으로 보내 주세요. 모든 신고가 큰 도움이 됩니다.",
 };
 
-export const INSTALL: Record<Lang, InstallDict> = { en, "zh-Hant": zhHant, "zh-Hans": zhHans, es, fr, ko };
+const ja: InstallDict = {
+  bar: "パブリックベータ：ToyScope はまだ App Store・Google Play にありません。",
+  barLink: "テストに協力する →",
+  navInstall: "インストール",
+  heroPill: "パブリックベータ · テスト協力募集中",
+  heroCta: "無料でベータを試す",
+  heroHow: "インストール方法",
+  heroNote: "まだ App Store・Google Play にはありません。スマホのブラウザから30秒でホーム画面に追加できます。",
+  eyebrow: "ベータをインストール",
+  h2: "30秒で ToyScope をホーム画面に",
+  lead: "ToyScope はまだアプリストアにありません。でもスマホのブラウザからインストールでき、普通のアプリのように全画面で開きます。ダウンロードも支払いも不要です。",
+  iphone: "iPhone",
+  android: "Android",
+  ios: [
+    ["Safari で開く", "iPhone の Safari で app.toyscope.app を開きます。"],
+    ["共有をタップ", "共有ボタン（上向き矢印の付いた四角）をタップ。新しい iPhone では先に ••• をタップしてから共有へ。"],
+    ["「ホーム画面に追加」をタップ", "リストを下にスクロールして「ホーム画面に追加」をタップ。先に「さらに表示」が必要な場合もあります。"],
+    ["追加をタップ", "名前は ToyScope のまま、右上の「追加」をタップします。"],
+  ],
+  and: [
+    ["Chrome で開く", "Android スマホの Chrome で app.toyscope.app を開きます。"],
+    ["⋮ メニューをタップ", "Chrome 右上の三点メニューをタップします。"],
+    ["「ホーム画面に追加」をタップ", "「ホーム画面に追加」をタップ。機種によっては「アプリをインストール」と表示されます。"],
+    ["インストールをタップ", "「インストール」または「追加」をタップ。置き場所を聞かれたらホーム画面を選びます。"],
+  ],
+  done: "完了。ブラウザではなく、ホーム画面のアイコンから ToyScope を開いてください。",
+  qrTitle: "パソコンで見ていますか？",
+  qrText: "スマホのカメラでこれを読み取ると ToyScope が開きます。",
+  homeLabel: "ToyScope",
+  testEyebrow: "いち早く参加",
+  testH: "テストに協力してください",
+  testItems: [
+    ["持っているおもちゃをスキャン", "ロボット、フィギュア、箱入り、箱なし。いろいろ試してもらえるほど助かります。"],
+    ["おかしな点を教えてください", "名前が違う、値段が変、ボタンが動かない？ スクリーンショットを付けて support@toyscope.app までメールしてください。"],
+    ["ファウンダー番号をキープ", "最初の30日以内に写真を10枚投稿すれば、番号と特典はずっとあなたのものです。"],
+  ],
+  testCta: "不具合を報告",
+  storesNote: "App Store・Google Play 版は近日公開です。",
+  faqQ: "なぜまだ App Store にないの？",
+  faqA: "ToyScope は現在パブリックベータです。App Store と Google Play に出す前に、コレクターの皆さんとテストしています。それまではスマホのブラウザからホーム画面に追加してください。使い方は同じです。",
+  bugQ: "不具合を見つけたら、どこに送ればいい？",
+  bugA: "タップした場所、起きたこと、できればスクリーンショットを support@toyscope.app までメールしてください。どの報告も役に立ちます。",
+};
+
+export const INSTALL: Record<Lang, InstallDict> = { en, "zh-Hant": zhHant, "zh-Hans": zhHans, ja, es, fr, ko };
