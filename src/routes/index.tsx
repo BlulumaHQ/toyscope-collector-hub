@@ -28,7 +28,7 @@ const lead = { margin: 0, color: "var(--muted)", fontSize: 18, lineHeight: 1.55 
 const card = { background: "#fff", color: "var(--ink)", borderRadius: 16, boxShadow: "0 20px 40px rgba(0,0,0,.35)", position: "absolute" } as const;
 const svg = { width: 22, height: 22, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true } as const;
 
-const shots = [
+const shots: [string, string, string, string][] = [
   ["Point and scan", "Full-screen camera. Add the back, the box or the foot stamp for a sharper match.", "t-scan", "Scan screen with the camera on a toy"],
   ["Know what it is", "Name, maker, year and the original Japanese name, in about seven seconds.", "t-result", "Scan result screen"],
   ["See what it’s worth", "A value for its condition, how sure the match is, and what’s missing.", "t-value", "Value and condition screen"],
@@ -37,7 +37,7 @@ const shots = [
   ["Message the seller", "Scan estimate beside the asking price. Contact in the app, email hidden.", "t-item", "Listing detail screen"],
   ["Follow collectors", "Profiles with their cabinets, what they collect and what they sell.", "t-profile", "Collector profile screen"],
 ];
-const listings = [
+const listings: [string, string, string, string, string][] = [
   ["t62", "DX Popynica Gatcha Spartan", "DX Popynica Gatcha Spartan", "$1,760", "@retro_rina · Tokyo"],
   ["t73", "Sun Vulcan Godaikin", "Sun Vulcan (Godaikin)", "$935", "@sentai_seoul · Seoul"],
   ["t78", "Vintage Barbie number 3 doll", "Vintage Barbie #3 Doll", "$1,760", "@barbie_vault · Montréal"],
