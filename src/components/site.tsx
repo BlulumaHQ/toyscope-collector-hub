@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useI18n, LANGS, type Lang } from "@/lib/i18n";
+import { INSTALL } from "@/lib/i18n-install";
 
 export function PhoneMockup({ src, alt, width, small, eager }: { src: string; alt: string; width: number; small?: boolean; eager?: boolean }) {
   return (
@@ -23,12 +24,15 @@ function LangSelect() {
 }
 
 export function Nav() {
-  const { t, appUrl } = useI18n();
+  const { t, appUrl, lang } = useI18n();
+  const x = INSTALL[lang];
   return (
     <div style={{ background: "var(--dark)", color: "#fff" }}>
+      <a href="/#install" className="betabar"><span className="dot" />{x.bar} <b>{x.barLink}</b></a>
       <div className="wrap" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 84 }}>
         <a href="/#top" aria-label="ToyScope home" style={{ display: "flex", alignItems: "center" }}><img className="navlogo" src="/brand/toyscope-logo-white.svg" alt="ToyScope" width={208} height={52} style={{ height: 52, width: "auto", display: "block" }} /></a>
         <div className="nav-links">
+          <a href="/#install">{x.navInstall}</a>
           <a href="/#how">{t.nav.how}</a>
           <a href="/#showcase">{t.nav.showcase}</a>
           <a href="/#founders">{t.nav.founders}</a>

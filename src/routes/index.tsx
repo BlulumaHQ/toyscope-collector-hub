@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Nav, Footer, PhoneMockup, StoreBadges, AppIcon } from "@/components/site";
+import { Nav, Footer, PhoneMockup, StoreBadges } from "@/components/site";
 import { SITE_URL } from "@/lib/site";
 import { useI18n } from "@/lib/i18n";
+import { INSTALL } from "@/lib/i18n-install";
+import { InstallSection } from "@/components/install";
 
 const TITLE = "ToyScope — Scan any toy. Know what it's worth.";
 const DESC = "Scan any toy to get its original Japanese name, value in every condition and history. Show off your collection and buy from collectors.";
@@ -47,7 +49,10 @@ const listings: [string, string, string, string, string][] = [
 const cmpFree = [true, true, true, false, false, false];
 
 function Index() {
-  const { t, appUrl } = useI18n();
+  const { t, appUrl, lang } = useI18n();
+  const x = INSTALL[lang];
+  const faqs: [string, string][] = t.faq.items.map((it, i) => (i === 3 ? [x.faqQ, x.faqA] : it));
+  faqs.push([x.bugQ, x.bugA]);
   return (
     <div style={{ width: "100%" }}>
       <Nav />
@@ -55,18 +60,21 @@ function Index() {
       <div id="top" style={{ background: "var(--dark)", color: "#fff", padding: "56px 0 96px", overflow: "hidden" }}>
         <div className="wrap hero-grid">
           <div style={{ ...col, gap: 24 }}>
-            <div style={{ display: "inline-flex", alignSelf: "flex-start", alignItems: "center", gap: 10, background: "rgba(245,158,11,.14)", color: "var(--gold)", border: "1px solid rgba(245,158,11,.35)", padding: "8px 14px", borderRadius: 999, fontSize: 14, fontWeight: 600 }}>
-              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "var(--gold)" }} />{t.hero.spots}
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+              <a href="#install" className="betapill"><span className="dot" />{x.heroPill}</a>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "rgba(245,158,11,.14)", color: "var(--gold)", border: "1px solid rgba(245,158,11,.35)", padding: "8px 14px", borderRadius: 999, fontSize: 14, fontWeight: 600 }}>
+                <span style={{ width: 8, height: 8, borderRadius: "50%", background: "var(--gold)" }} />{t.hero.spots}
+            </div>
             </div>
             <h1 className="h1">{t.hero.h1a}<br />{t.hero.h1b}</h1>
             <p style={{ margin: 0, fontSize: 19, lineHeight: 1.55, color: "#B7BDCB", maxWidth: 540 }}>{t.hero.lead}</p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href={appUrl} className="btn" style={{ background: "var(--blue)", color: "#fff", fontSize: 17, padding: "16px 26px", borderRadius: 14, minHeight: 52 }}>{t.hero.cta}</a>
-              <a href="#how" className="btn" style={{ background: "rgba(255,255,255,.08)", color: "#fff", fontSize: 17, padding: "16px 24px", borderRadius: 14, border: "1px solid rgba(255,255,255,.18)", minHeight: 52 }}>{t.hero.see}</a>
+              <a href={appUrl} className="btn" style={{ background: "var(--blue)", color: "#fff", fontSize: 17, padding: "16px 26px", borderRadius: 14, minHeight: 52 }}>{x.heroCta}</a>
+              <a href="#install" className="btn" style={{ background: "rgba(255,255,255,.08)", color: "#fff", fontSize: 17, padding: "16px 24px", borderRadius: 14, border: "1px solid rgba(255,255,255,.18)", minHeight: 52 }}>{x.heroHow}</a>
             </div>
             <div style={{ ...col, gap: 12, marginTop: 4 }}>
               <StoreBadges icon={56} />
-              <div style={{ color: "#8D94A5", fontSize: 14 }}>{t.hero.soon}</div>
+              <div style={{ color: "#8D94A5", fontSize: 14 }}>{x.heroNote}</div>
             </div>
           </div>
           <div style={{ position: "relative", display: "flex", justifyContent: "center" }}>
@@ -86,6 +94,8 @@ function Index() {
           </div>
         </div>
       </div>
+
+      <InstallSection />
 
       {/* HOW */}
       <div id="how" style={{ padding: "96px 0" }}>
@@ -260,20 +270,7 @@ function Index() {
         <div className="wrap" style={{ ...col, gap: 36 }}>
           <h2 className="h2" style={{ fontSize: 40, lineHeight: 1.2 }}>{t.faq.h2}</h2>
           <div className="faq">
-            {t.faq.items.map(([q, a]) => (<div key={q}><h3>{q}</h3><p>{a}</p></div>))}
-          </div>
-        </div>
-      </div>
-
-      {/* GET THE APP */}
-      <div id="app" style={{ background: "var(--dark)", color: "#fff", padding: "88px 0" }}>
-        <div className="wrap getapp">
-          <AppIcon size={168} />
-          <div style={{ ...col, gap: 16 }}>
-            <div className="eyebrow" style={{ color: "var(--blue-l)" }}>{t.app.eyebrow}</div>
-            <h2 className="h2" style={{ margin: 0 }}>{t.app.h2}</h2>
-            <p style={{ margin: 0, fontSize: 18, lineHeight: 1.55, color: "#B7BDCB", maxWidth: 620 }}>{t.app.p1}<a href={appUrl} style={{ color: "#fff", fontWeight: 600 }}>app.toyscope.app</a>{t.app.p2}</p>
-            <StoreBadges />
+            {faqs.map(([q, a]) => (<div key={q}><h3>{q}</h3><p>{a}</p></div>))}
           </div>
         </div>
       </div>
