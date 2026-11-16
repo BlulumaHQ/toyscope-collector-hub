@@ -69,7 +69,7 @@ export function InstallSection() {
             </ol>
             <div className="idone">{x.done}</div>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href={appUrl} className="btn" style={{ background: "var(--blue)", color: "#fff", fontSize: 17, padding: "16px 26px", borderRadius: 14, minHeight: 52 }}>{x.heroCta}</a>
+              <a href={`${appUrl}&install=1`} className="btn" style={{ background: "var(--blue)", color: "#fff", fontSize: 17, padding: "16px 26px", borderRadius: 14, minHeight: 52 }}>{x.heroCta}</a>
             </div>
           </div>
           <div className="install-side">
