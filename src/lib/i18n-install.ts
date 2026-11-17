@@ -5,6 +5,7 @@ export type InstallDict = {
   barLink: string;
   navInstall: string;
   heroPill: string;
+  betaFree: string;
   heroCta: string;
   heroHow: string;
   heroNote: string;
@@ -34,7 +35,8 @@ const en: InstallDict = {
   bar: "Public beta: ToyScope isn’t on the App Store or Google Play yet.",
   barLink: "Help us test it →",
   navInstall: "Install",
-  heroPill: "Public beta · help us test",
+  heroPill: "Public beta · free for everyone",
+  betaFree: "Free during the beta: scanning, collecting and selling are all free. No credit card, and nothing is charged. The prices further down are only our plan for after the App Store launch.",
   heroCta: "Try the beta free",
   heroHow: "How to install",
   heroNote: "Not on the App Store or Google Play yet. Add it to your home screen from your phone’s browser in 30 seconds.",
@@ -78,7 +80,8 @@ const zhHant: InstallDict = {
   bar: "公開測試中：ToyScope 還沒有上架 App Store 和 Google Play。",
   barLink: "幫我們測試 →",
   navInstall: "安裝",
-  heroPill: "公開測試中 · 歡迎幫忙測試",
+  heroPill: "公開測試中 · 全部免費",
+  betaFree: "測試期間全部免費：掃描、收藏、上架都不用錢，不用綁信用卡，也不會被扣款。下面寫的價錢，只是 App 正式上架後的初步規劃。",
   heroCta: "免費試用測試版",
   heroHow: "安裝教學",
   heroNote: "還沒有上架 App Store 和 Google Play。用手機瀏覽器 30 秒就能加到主畫面。",
@@ -122,7 +125,8 @@ const zhHans: InstallDict = {
   bar: "公开测试中：ToyScope 还没有上架 App Store 和 Google Play。",
   barLink: "帮我们测试 →",
   navInstall: "安装",
-  heroPill: "公开测试中 · 欢迎帮忙测试",
+  heroPill: "公开测试中 · 全部免费",
+  betaFree: "测试期间全部免费：扫描、收藏、上架都不用钱，不用绑信用卡，也不会被扣款。下面写的价格，只是 App 正式上架后的初步规划。",
   heroCta: "免费试用测试版",
   heroHow: "安装教程",
   heroNote: "还没有上架 App Store 和 Google Play。用手机浏览器 30 秒就能添加到主屏幕。",
@@ -166,7 +170,8 @@ const es: InstallDict = {
   bar: "Beta pública: ToyScope aún no está en la App Store ni en Google Play.",
   barLink: "Ayúdanos a probarla →",
   navInstall: "Instalar",
-  heroPill: "Beta pública · ayúdanos a probarla",
+  heroPill: "Beta pública · gratis para todos",
+  betaFree: "Gratis durante la beta: escanear, coleccionar y vender es totalmente gratis. Sin tarjeta y sin ningún cobro. Los precios de más abajo son solo nuestro plan para después del lanzamiento en las tiendas.",
   heroCta: "Prueba la beta gratis",
   heroHow: "Cómo instalarla",
   heroNote: "Aún no está en la App Store ni en Google Play. Añádela a tu pantalla de inicio desde el navegador del móvil en 30 segundos.",
@@ -210,7 +215,8 @@ const fr: InstallDict = {
   bar: "Bêta publique : ToyScope n’est pas encore sur l’App Store ni sur Google Play.",
   barLink: "Aidez-nous à la tester →",
   navInstall: "Installer",
-  heroPill: "Bêta publique · aidez-nous à tester",
+  heroPill: "Bêta publique · gratuite pour tous",
+  betaFree: "Gratuit pendant la bêta : scanner, collectionner et vendre, tout est gratuit. Pas de carte bancaire, rien n’est facturé. Les prix plus bas ne sont que notre projet pour après le lancement sur les stores.",
   heroCta: "Essayer la bêta gratuitement",
   heroHow: "Comment l’installer",
   heroNote: "Pas encore sur l’App Store ni sur Google Play. Ajoutez-la à votre écran d’accueil depuis le navigateur de votre téléphone en 30 secondes.",
@@ -254,7 +260,8 @@ const ko: InstallDict = {
   bar: "공개 베타: ToyScope는 아직 App Store와 Google Play에 출시되지 않았습니다.",
   barLink: "테스트에 참여하기 →",
   navInstall: "설치",
-  heroPill: "공개 베타 · 테스트에 참여해 주세요",
+  heroPill: "공개 베타 · 모두 무료",
+  betaFree: "베타 기간에는 스캔, 컬렉션, 판매 모두 무료입니다. 카드 등록도, 결제도 없습니다. 아래 가격은 앱스토어 출시 이후의 계획일 뿐입니다.",
   heroCta: "베타 무료로 사용하기",
   heroHow: "설치 방법",
   heroNote: "아직 App Store와 Google Play에는 없습니다. 휴대폰 브라우저에서 30초 만에 홈 화면에 추가할 수 있습니다.",
@@ -298,7 +305,8 @@ const ja: InstallDict = {
   bar: "パブリックベータ：ToyScope はまだ App Store・Google Play にありません。",
   barLink: "テストに協力する →",
   navInstall: "インストール",
-  heroPill: "パブリックベータ · テスト協力募集中",
+  heroPill: "パブリックベータ · 全員無料",
+  betaFree: "ベータ期間中は、スキャン・コレクション・出品すべて無料。カード登録も課金も一切ありません。下に書いてある価格は、ストア公開後の予定にすぎません。",
   heroCta: "無料でベータを試す",
   heroHow: "インストール方法",
   heroNote: "まだ App Store・Google Play にはありません。スマホのブラウザから30秒でホーム画面に追加できます。",

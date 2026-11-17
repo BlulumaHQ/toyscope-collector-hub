@@ -75,6 +75,7 @@ function Index() {
               <a href={appUrl} className="btn" style={{ background: "var(--blue)", color: "#fff", fontSize: 17, padding: "16px 26px", borderRadius: 14, minHeight: 52 }}>{x.heroCta}</a>
               <a href="#install" className="btn" style={{ background: "rgba(255,255,255,.08)", color: "#fff", fontSize: 17, padding: "16px 24px", borderRadius: 14, border: "1px solid rgba(255,255,255,.18)", minHeight: 52 }}>{x.heroHow}</a>
             </div>
+            <div className="betafree"><span className="ck" aria-hidden="true">✓</span><span>{x.betaFree}</span></div>
             <div style={{ ...col, gap: 12, marginTop: 4 }}>
               <StoreBadges icon={56} />
               <div style={{ color: "#8D94A5", fontSize: 14 }}>{x.heroNote}</div>
@@ -221,6 +222,7 @@ function Index() {
             <div className="eyebrow" style={{ color: "var(--gold)" }}>{t.founders.eyebrow}</div>
             <h2 className="h2" style={{ fontSize: 48, lineHeight: 1.05 }}>{t.founders.h2}</h2>
             <p style={{ ...lead, color: "#B7BDCB" }}>{t.founders.p}</p>
+            <div className="betafree"><span className="ck" aria-hidden="true">✓</span><span>{x.betaFree}</span></div>
           </div>
           <div className="three">
             <div className="tier" style={{ background: "linear-gradient(180deg, #2A2210, #17140C)", border: "1px solid rgba(251,191,36,.45)" }}>
