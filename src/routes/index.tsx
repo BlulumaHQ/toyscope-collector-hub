@@ -271,7 +271,7 @@ function Index() {
           <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 22, overflow: "hidden" }}>
             <div className="cmp" style={{ background: "var(--page)", fontWeight: 700, fontSize: 14, borderBottom: "1px solid var(--line)" }}><div /><div>{t.cmp.free}</div><div style={{ color: "var(--blue)" }}>{t.cmp.pro}</div></div>
             {t.cmp.rows.map((f, i) => (
-              <div className="cmp" key={i}><div>{f}</div>{cmpFree[i] ? <div>✓</div> : <div className="no">—</div>}<div>{i === 3 ? t.cmp.upTo30 : "✓"}</div></div>
+              <div className="cmp" key={i}><div>{f}</div>{cmpFree[i] ? <div><span className="cmpok">✓</span></div> : <div className="no">—</div>}<div><span className="cmpok">✓</span>{i === 3 ? " " + t.cmp.upTo30.replace(/^✓\s*/, "") : ""}</div></div>
             ))}
           </div>
         </div>
