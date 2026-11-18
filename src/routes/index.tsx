@@ -48,7 +48,8 @@ const listings: [string, string, string, string, string][] = [
   ["t73", "Sun Vulcan Godaikin", "Sun Vulcan (Godaikin)", "$935", "@sentai_seoul · Seoul"],
   ["t78", "Vintage Barbie number 3 doll", "Vintage Barbie #3 Doll", "$1,760", "@barbie_vault · Montréal"],
 ];
-const cmpFree = [true, true, true, false, false, false];
+const cmpOrder = [0, 1, 2, 4, 3, 5];
+const cmpFree = [true, true, true, false, true, false];
 
 function Index() {
   const { t, appUrl, lang } = useI18n();
@@ -270,9 +271,9 @@ function Index() {
           <h2 className="h2" style={{ fontSize: 40, lineHeight: 1.2 }}>{t.cmp.h2}</h2>
           <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 22, overflow: "hidden" }}>
             <div className="cmp" style={{ background: "var(--page)", fontWeight: 700, fontSize: 14, borderBottom: "1px solid var(--line)" }}><div /><div>{t.cmp.free}</div><div style={{ color: "var(--blue)" }}>{t.cmp.pro}</div></div>
-            {t.cmp.rows.map((f, i) => (
+            {cmpOrder.map((i) => { const f = t.cmp.rows[i]; return (
               <div className="cmp" key={i}><div>{f}</div>{cmpFree[i] ? <div><span className="cmpok">✓</span></div> : <div className="no">—</div>}<div><span className="cmpok">✓</span>{i === 3 ? " " + t.cmp.upTo30.replace(/^✓\s*/, "") : ""}</div></div>
-            ))}
+            )})}
           </div>
         </div>
       </div>
