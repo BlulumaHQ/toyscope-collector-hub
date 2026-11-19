@@ -149,7 +149,7 @@ export const LEGAL: { updated: string; privacy: LegalDoc; terms: LegalDoc; refun
    ],
    [
     "Founding and Lifetime members",
-    "Founders #1–20 never pay for Pro, so there is nothing to refund. Founding members #21–200 can request a refund under the same rules as everyone else; their half price stays with their account if they come back later."
+    "Founders #1–20 never pay for Pro, so there is nothing to refund. Founding members (who joined before Dec 15, 2026) can request a refund under the same rules as everyone else; their half price stays with their account if they come back later."
    ],
    [
     "Your rights",

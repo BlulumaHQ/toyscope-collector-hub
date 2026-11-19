@@ -66,7 +66,7 @@ const en: InstallDict = {
   testItems: [
     ["Scan toys you own", "Try a few: robots, figures, boxed or loose. The more kinds you try, the better."],
     ["Tell us what’s wrong", "Wrong name, odd price, a button that doesn’t work? Email support@toyscope.app with a screenshot."],
-    ["Keep your Founder number", "Post 10 photos in your first 30 days and your number and deal are yours for good."],
+    ["Keep your Founder number", "Join before Dec 15 and post 1 photo in your first 30 days. Your number and deal are yours for good."],
   ],
   testCta: "Report a bug",
   storesNote: "The App Store and Google Play versions are coming soon.",
@@ -111,7 +111,7 @@ const zhHant: InstallDict = {
   testItems: [
     ["掃描你自己的玩具", "多試幾種：機器人、人偶、有盒或裸裝。試得越多種越好。"],
     ["告訴我們哪裡有問題", "名稱錯了、價格怪怪的、按鈕沒反應？請寄 email 和截圖到 support@toyscope.app。"],
-    ["保留你的創始編號", "前 30 天內發 10 張照片，你的編號和優惠就永久屬於你。"],
+    ["保留你的創始編號", "12 月 15 日前加入，並在前 30 天內發 1 張照片，你的編號和優惠就永久屬於你。"],
   ],
   testCta: "回報問題",
   storesNote: "App Store 和 Google Play 版本即將推出。",
@@ -156,7 +156,7 @@ const zhHans: InstallDict = {
   testItems: [
     ["扫描你自己的玩具", "多试几种：机器人、人偶、带盒或裸装。试得越多越好。"],
     ["告诉我们哪里有问题", "名称错了、价格奇怪、按钮没反应？请发邮件和截图到 support@toyscope.app。"],
-    ["保留你的创始编号", "前 30 天内发 10 张照片，你的编号和优惠就永久属于你。"],
+    ["保留你的创始编号", "12 月 15 日前加入，并在前 30 天内发 1 张照片，你的编号和优惠就永久属于你。"],
   ],
   testCta: "反馈问题",
   storesNote: "App Store 和 Google Play 版本即将推出。",
@@ -201,7 +201,7 @@ const es: InstallDict = {
   testItems: [
     ["Escanea tus juguetes", "Prueba varios: robots, figuras, en caja o sueltos. Cuantos más tipos, mejor."],
     ["Cuéntanos qué falla", "¿Nombre equivocado, precio raro o un botón que no funciona? Escribe a support@toyscope.app con una captura."],
-    ["Conserva tu número de Fundador", "Publica 10 fotos en tus primeros 30 días y tu número y tu oferta serán tuyos para siempre."],
+    ["Conserva tu número de Fundador", "Únete antes del 15 de diciembre y publica 1 foto en tus primeros 30 días: tu número y tu oferta serán tuyos para siempre."],
   ],
   testCta: "Reportar un error",
   storesNote: "Las versiones para App Store y Google Play llegan pronto.",
@@ -246,7 +246,7 @@ const fr: InstallDict = {
   testItems: [
     ["Scannez vos jouets", "Essayez-en plusieurs : robots, figurines, en boîte ou loose. Plus c’est varié, mieux c’est."],
     ["Dites-nous ce qui cloche", "Mauvais nom, prix bizarre, bouton qui ne marche pas ? Écrivez à support@toyscope.app avec une capture d’écran."],
-    ["Gardez votre numéro de Fondateur", "Publiez 10 photos pendant vos 30 premiers jours : votre numéro et votre offre sont à vous pour de bon."],
+    ["Gardez votre numéro de Fondateur", "Inscrivez-vous avant le 15 décembre et publiez 1 photo pendant vos 30 premiers jours : votre numéro et votre offre sont à vous pour de bon."],
   ],
   testCta: "Signaler un bug",
   storesNote: "Les versions App Store et Google Play arrivent bientôt.",
@@ -291,7 +291,7 @@ const ko: InstallDict = {
   testItems: [
     ["가진 장난감 스캔하기", "로봇, 피규어, 박스나 박스 없는 것까지 여러 종류를 시도해 보세요. 다양할수록 좋습니다."],
     ["문제점 알려 주기", "이름이 틀렸거나, 가격이 이상하거나, 버튼이 안 되나요? 스크린샷과 함께 support@toyscope.app으로 보내 주세요."],
-    ["파운더 번호 유지", "가입 후 30일 안에 사진 10장을 올리면 번호와 혜택이 영구히 내 것이 됩니다."],
+    ["파운더 번호 유지", "12월 15일 전에 가입하고 30일 안에 사진 1장을 올리면 번호와 혜택이 영구히 내 것이 됩니다."],
   ],
   testCta: "버그 신고하기",
   storesNote: "App Store와 Google Play 버전이 곧 출시됩니다.",
@@ -336,7 +336,7 @@ const ja: InstallDict = {
   testItems: [
     ["持っているおもちゃをスキャン", "ロボット、フィギュア、箱入り、箱なし。いろいろ試してもらえるほど助かります。"],
     ["おかしな点を教えてください", "名前が違う、値段が変、ボタンが動かない？ スクリーンショットを付けて support@toyscope.app までメールしてください。"],
-    ["ファウンダー番号をキープ", "最初の30日以内に写真を10枚投稿すれば、番号と特典はずっとあなたのものです。"],
+    ["ファウンダー番号をキープ", "12月15日までに登録し、最初の30日以内に写真を1枚投稿すれば、番号と特典はずっとあなたのものです。"],
   ],
   testCta: "不具合を報告",
   storesNote: "App Store・Google Play 版は近日公開です。",

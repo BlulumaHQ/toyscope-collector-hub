@@ -6,7 +6,7 @@ const SB_KEY = "sb_publishable_xOp7aSByxfPuyojXVo6-kg_F-aF4MB0";
 
 export type Spots = { lifetime: number; founding: number };
 // Shown until the live numbers arrive (server render and first paint)
-const FALLBACK: Spots = { lifetime: 17, founding: 180 };
+const FALLBACK: Spots = { lifetime: 0, founding: 0 };
 let cache: Spots | null = null;
 let pending: Promise<Spots | null> | null = null;
 
@@ -36,6 +36,12 @@ export function useSpots(): Spots {
     return () => { live = false; };
   }, []);
   return s;
+}
+
+// Founding offer closes at the end of Dec 15, 2026 (Vancouver time)
+export const FOUNDING_DEADLINE = new Date("2026-12-15T23:59:59-08:00");
+export function foundingDaysLeft(now = new Date()): number {
+  return Math.max(0, Math.ceil((FOUNDING_DEADLINE.getTime() - now.getTime()) / 86400000));
 }
 
 export const fill = (str: string, n: number) => str.replace("{n}", String(n));
